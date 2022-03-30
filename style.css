@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Open Sans', sans-serif;
+
+}
+header{
+    background: #c4c4f7;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    align-items: center;
+    /* transform: translate(-50%, -50%); */
+}
+
+ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(19, 42, 143);
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+}
+ul li .nav{
+    position: relative;
+}
+ul li .nav::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 20px;
+    background: #fff;
+    display: block;
+    /* margin-left: 20px; */
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(2)
+}
+/* li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 20px;
+    background: #fff;
+    display: block;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(2)
+} */
+
+/* ul li a:hover::before{
+    opacity: 1;
+    width: 50%;
+    transform: scaleY(1);
+} */
+ul li .nav:hover::before{
+    opacity: 1;
+    width: 50%;
+    transform: scaleY(1);
+}
+
+.container{
+    display: flex;
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: center;
+}
+
+.business{
+    max-width: 700px;
+    width: 670px;
+    height: auto;
+}
+
+.content-left{
+    flex-basis: 30%;
+}
+
+.container h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #3a3a3a;
+    /* margin-bottom: 10px; */
+}
+.container h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #f5be57;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+}
+
+.container p{
+    font-size: 17px;
+    font-weight: 400;
+    color: #010420;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    padding: 15px 20px;
+    border: none;
+    background: #c4c4f7;
+    color:rgb(19, 42, 143);
+    border-radius: 20px;
+}
+
+.signup-btn{
+    padding: 10px 20px;
+    border: none;
+    background: rgb(19, 42, 143);
+    color:#fff;
+    border-radius: 20px;
+    outline: none; 
+    font-weight: 700;
+}
